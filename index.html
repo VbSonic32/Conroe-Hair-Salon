@@ -1,0 +1,843 @@
+<!doctype html>
+<html class="light" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="bg-background text-on-surface">
+		<nav
+			class="fixed top-0 w-full z-50 bg-[#F0F2F5]/80 backdrop-blur-md border-b border-outline/60"
+		>
+			<div
+				class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto"
+			>
+				<a class="text-2xl font-serif tracking-tight text-primary" href="#"
+					>LUXE SALON</a
+				>
+				<div class="hidden md:flex items-center space-gap-12 gap-10">
+					<a
+						class="nav-link text-secondary hover:text-primary transition-colors duration-300 font-label text-[12px] uppercase letter-spacing-tag"
+						href="#services"
+						>SERVICES</a
+					>
+					<a
+						class="nav-link text-secondary hover:text-primary transition-colors duration-300 font-label text-[12px] uppercase letter-spacing-tag"
+						href="#stylists"
+						>STYLISTS</a
+					>
+					<a
+						class="nav-link text-secondary hover:text-primary transition-colors duration-300 font-label text-[12px] uppercase letter-spacing-tag"
+						href="#portfolio"
+						>PORTFOLIO</a
+					>
+					<a
+						class="nav-link text-secondary hover:text-primary transition-colors duration-300 font-label text-[12px] uppercase letter-spacing-tag"
+						href="#journal"
+						>JOURNAL</a
+					>
+				</div>
+				<a
+					class="matte-blue-cta text-white px-8 py-3 font-serif text-[12px] uppercase letter-spacing-tag tracking-widest transition-all shadow-lg shadow-primary/10 flex items-center justify-center"
+					href="#contact"
+				>
+					BOOK NOW
+				</a>
+			</div>
+		</nav>
+		<main>
+			<section
+				class="pt-32 pb-24 px-12 max-w-screen-2xl mx-auto grid grid-cols-12 gap-6 items-center"
+			>
+				<div class="col-span-12 md:col-span-5 z-10">
+					<span
+						class="label-md uppercase letter-spacing-tag text-tertiary mb-4 block"
+						>Conroe's Premier Atelier</span
+					>
+					<h1 class="font-serif text-primary leading-[1.1] letter-spacing-hero mb-8">
+						<span
+							class="block text-4xl md:text-6xl lg:text-7xl whitespace-nowrap mb-4"
+							>Refined Artistry & Next Level</span
+						>
+						<span class="block text-6xl md:text-8xl lg:text-9xl italic"
+							>Bespoke Beauty.</span
+						>
+					</h1>
+					<p class="text-secondary max-w-sm mb-10 leading-relaxed">
+						A sanctuary where precision meets luxury. Experience hair design curated
+						specifically for your unique silhouette.
+					</p>
+					<div class="flex items-center gap-8">
+						<button
+							class="matte-blue-cta text-white px-10 py-5 uppercase font-label text-[12px] tracking-widest shadow-xl shadow-primary/20"
+						>
+							Reserve Your Visit
+						</button>
+						<a
+							class="font-serif italic border-b border-primary text-primary pb-1"
+							href="#services"
+							>View Services</a
+						>
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-7 relative h-[700px]">
+					<div class="absolute top-0 right-0 w-2/3 h-4/5 z-0 overflow-hidden">
+						<img
+							alt="Modern high-end salon interior"
+							class="w-full h-full object-cover grayscale-[0.2] brightness-110"
+							src="images/hero-main.jpg"
+						/>
+					</div>
+					<div
+						class="absolute bottom-0 left-0 w-1/2 h-3/5 z-20 overflow-hidden shadow-2xl"
+					>
+						<img
+							alt="Stylist working"
+							class="w-full h-full object-cover"
+							src="images/hero-stylist.jpg"
+						/>
+					</div>
+					<div
+						class="absolute top-1/2 right-12 w-1/3 h-1/4 z-30 overflow-hidden hidden lg:block outline outline-background outline-[20px]"
+					>
+						<img
+							alt="Elegant woman"
+							class="w-full h-full object-cover"
+							src="images/hero-woman.jpg"
+						/>
+					</div>
+				</div>
+			</section>
+			<section
+				id="services"
+				class="py-24 bg-surface-container-low px-12 border-t border-outline/60"
+			>
+				<div class="max-w-5xl mx-auto">
+					<div class="text-center mb-20">
+						<span class="label-md uppercase letter-spacing-tag text-tertiary block mb-4">Exceptional Technique</span>
+						<h2 class="text-4xl md:text-5xl font-serif text-primary">Curated Services</h2>
+					</div>
+					<div class="space-y-12">
+						<div
+							class="flex justify-between items-baseline group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
+						>
+							<div class="max-w-md">
+								<h3
+									class="text-3xl font-serif text-primary group-hover:italic transition-all"
+								>
+									Precision Cuts
+								</h3>
+								<p class="text-secondary mt-2 text-sm">
+									Tailored architectural shapes designed to enhance natural movement and
+									facial structure.
+								</p>
+							</div>
+							<span class="font-body text-xl text-primary/80">From $110.00</span>
+						</div>
+						<div
+							class="flex justify-between items-baseline group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
+						>
+							<div class="max-w-md">
+								<h3
+									class="text-3xl font-serif text-primary group-hover:italic transition-all"
+								>
+									Custom Color
+								</h3>
+								<p class="text-secondary mt-2 text-sm">
+									Dimensional tones curated for your complexion using the world's finest
+									pigments.
+								</p>
+							</div>
+							<span class="font-body text-xl text-primary/80">From $185.00</span>
+						</div>
+						<div
+							class="flex justify-between items-baseline group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
+						>
+							<div class="max-w-md">
+								<h3
+									class="text-3xl font-serif text-primary group-hover:italic transition-all"
+								>
+									Balayage
+								</h3>
+								<p class="text-secondary mt-2 text-sm">
+									Hand-painted highlights that mimic the soft, sun-kissed gradients of
+									the Conroe sky.
+								</p>
+							</div>
+							<span class="font-body text-xl text-primary/80">From $250.00</span>
+						</div>
+						<div
+							class="flex justify-between items-baseline group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
+						>
+							<div class="max-w-md">
+								<h3
+									class="text-3xl font-serif text-primary group-hover:italic transition-all"
+								>
+									Luxury Treatments
+								</h3>
+								<p class="text-secondary mt-2 text-sm">
+									Restorative botanical infusions for molecular hair health and
+									unparalleled shine.
+								</p>
+							</div>
+							<span class="font-body text-xl text-primary/80">From $195.00</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-32 px-12 bg-background border-t border-outline/60">
+				<div
+					class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center"
+				>
+					<div class="bg-surface p-6 aspect-[4/5] border border-outline/60">
+						<img
+							alt="Salon interior"
+							class="w-full h-full object-cover shadow-lg grayscale-[0.1]"
+							src="images/about-salon.jpg"
+						/>
+					</div>
+					<div class="space-y-8">
+						<span class="label-md uppercase letter-spacing-tag text-tertiary"
+							>Our Heritage</span
+						>
+						<h2 class="text-5xl font-serif text-primary leading-tight">
+							Rooted in Conroe, <br />Refined by Tradition.
+						</h2>
+						<p class="text-lg leading-relaxed text-secondary">
+							Luxe Salon was born from a vision to bring high-editorial hair design to
+							the heart of Montgomery County. We believe beauty is not a
+							one-size-fits-all service, but a collaborative dialogue between stylist
+							and client.
+						</p>
+						<p class="text-lg leading-relaxed text-secondary">
+							Our studio is a gathering place for the Conroe community—a space where
+							time slows down, and the focus remains entirely on the craft and the
+							person in our chair.
+						</p>
+						<div class="pt-6">
+							<a
+								class="font-serif text-xl italic underline underline-offset-8 text-primary"
+								href="#"
+								>Discover our story</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				id="stylists"
+				class="py-24 px-12 bg-surface border-t border-outline/60"
+			>
+				<div class="max-w-screen-2xl mx-auto">
+					<div class="text-center mb-20">
+						<span class="label-md uppercase letter-spacing-tag text-tertiary block mb-4">The Atelier Team</span>
+						<h2 class="text-4xl md:text-5xl font-serif text-primary">The Curators</h2>
+					</div>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+						<div class="group relative overflow-hidden border border-outline/20">
+							<div class="aspect-[3/4] overflow-hidden mb-6">
+								<img
+									alt="Julian Vane"
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[0.2]"
+									src="images/stylist-julian.jpg"
+								/>
+							</div>
+							<div
+								class="absolute bottom-0 left-0 w-full p-8 bg-primary/90 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform duration-500 text-on-primary"
+							>
+								<h3 class="text-2xl font-serif mb-2">Julian Vane</h3>
+								<p
+									class="text-sm font-body uppercase tracking-widest text-outline-variant mb-4"
+								>
+									Master Colorist
+								</p>
+								<p class="text-sm italic">
+									Specializing in seamless balayage and corrective transformations for
+									over 12 years.
+								</p>
+							</div>
+							<div class="px-4 pb-6">
+								<h3 class="text-2xl font-serif text-primary">Julian Vane</h3>
+								<p class="text-secondary uppercase text-xs letter-spacing-tag mt-1">
+									Master Colorist
+								</p>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden border border-outline/20">
+							<div class="aspect-[3/4] overflow-hidden mb-6">
+								<img
+									alt="Elena Rossi"
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[0.2]"
+									src="images/stylist-elena.jpg"
+								/>
+							</div>
+							<div
+								class="absolute bottom-0 left-0 w-full p-8 bg-primary/90 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform duration-500 text-on-primary"
+							>
+								<h3 class="text-2xl font-serif mb-2">Elena Rossi</h3>
+								<p
+									class="text-sm font-body uppercase tracking-widest text-outline-variant mb-4"
+								>
+									Creative Director
+								</p>
+								<p class="text-sm italic">
+									An architect of hair, Elena brings a fashion-forward approach to every
+									precision cut.
+								</p>
+							</div>
+							<div class="px-4 pb-6">
+								<h3 class="text-2xl font-serif text-primary">Elena Rossi</h3>
+								<p class="text-secondary uppercase text-xs letter-spacing-tag mt-1">
+									Creative Director
+								</p>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden border border-outline/20">
+							<div class="aspect-[3/4] overflow-hidden mb-6">
+								<img
+									alt="Sarah Miller"
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[0.2]"
+									src="images/stylist-sarah.jpg"
+								/>
+							</div>
+							<div
+								class="absolute bottom-0 left-0 w-full p-8 bg-primary/90 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform duration-500 text-on-primary"
+							>
+								<h3 class="text-2xl font-serif mb-2">Sarah Miller</h3>
+								<p
+									class="text-sm font-body uppercase tracking-widest text-outline-variant mb-4"
+								>
+									Texture Specialist
+								</p>
+								<p class="text-sm italic">
+									Celebrating natural movement with luxury botanical treatments and
+									specialized cutting.
+								</p>
+							</div>
+							<div class="px-4 pb-6">
+								<h3 class="text-2xl font-serif text-primary">Sarah Miller</h3>
+								<p class="text-secondary uppercase text-xs letter-spacing-tag mt-1">
+									Texture Specialist
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="py-24 px-12 bg-primary text-on-primary border-t border-outline/60"
+			>
+				<div class="max-w-screen-2xl mx-auto">
+					<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+						<!-- Left Side: Content & Stats -->
+						<div class="lg:col-span-5">
+							<span
+								class="text-[10px] uppercase tracking-[0.2em] text-on-primary/60 mb-6 block font-body"
+								>The Atelier Advantage</span
+							>
+							<h2
+								class="text-5xl md:text-6xl font-serif mb-8 leading-[1.1] letter-spacing-hero"
+							>
+								Why Choose <br /><span class="italic text-on-primary/90"
+									>Luxe Salon</span
+								>
+							</h2>
+							<p class="text-on-primary/70 text-lg mb-12 max-w-md leading-relaxed">
+								We believe hair design is an intimate collaboration. Our atelier
+								provides a sanctuary where technical precision meets high-editorial
+								vision, ensuring every guest leaves with a bespoke masterpiece.
+							</p>
+							<div class="flex items-center gap-16">
+								<div class="flex flex-col">
+									<span class="text-6xl font-serif mb-2 text-on-primary">30k+</span>
+									<span
+										class="text-[10px] uppercase tracking-[0.1em] text-on-primary/50 font-body"
+										>Curated Styles</span
+									>
+								</div>
+								<div class="w-px h-16 bg-on-primary/10"></div>
+								<div class="flex flex-col">
+									<span class="text-6xl font-serif mb-2 text-on-primary">15</span>
+									<span
+										class="text-[10px] uppercase tracking-[0.1em] text-on-primary/50 font-body"
+										>Year Legacy</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<!-- Right Side: Features Grid -->
+						<div
+							class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5"
+						>
+							<!-- Card 1 -->
+							<div
+								class="bg-primary p-10 group hover:bg-primary-container transition-all duration-500 border border-white/5"
+							>
+								<span
+									class="material-symbols-outlined text-4xl mb-8 text-on-primary/40 group-hover:text-on-primary transition-colors duration-500"
+								>
+									groups
+								</span>
+								<h3 class="text-2xl font-serif mb-4 text-on-primary">
+									Artisan Stylists
+								</h3>
+								<p
+									class="text-sm text-on-primary/60 leading-relaxed group-hover:text-on-primary/80 transition-colors"
+								>
+									Our team of highly skilled and experienced stylists is dedicated to
+									staying on the cutting edge of industry trends. Trust us to transform
+									your vision into a stunning reality.
+								</p>
+							</div>
+							<!-- Card 2 -->
+							<div
+								class="bg-primary p-10 group hover:bg-primary-container transition-all duration-500 border border-white/5"
+							>
+								<span
+									class="material-symbols-outlined text-4xl mb-8 text-on-primary/40 group-hover:text-on-primary transition-colors duration-500"
+								>
+									forum
+								</span>
+								<h3 class="text-2xl font-serif mb-4 text-on-primary">
+									Bespoke Consultations
+								</h3>
+								<p
+									class="text-sm text-on-primary/60 leading-relaxed group-hover:text-on-primary/80 transition-colors"
+								>
+									Your unique style is our priority. Enjoy personalized consultations
+									with our stylists, ensuring a haircut that complements your features,
+									lifestyle, and fashion preferences.
+								</p>
+							</div>
+							<!-- Card 3 -->
+							<div
+								class="bg-primary p-10 group hover:bg-primary-container transition-all duration-500 border border-white/5"
+							>
+								<span
+									class="material-symbols-outlined text-4xl mb-8 text-on-primary/40 group-hover:text-on-primary transition-colors duration-500"
+								>
+									auto_awesome
+								</span>
+								<h3 class="text-2xl font-serif mb-4 text-on-primary">
+									Trendsetting Vision
+								</h3>
+								<p
+									class="text-sm text-on-primary/60 leading-relaxed group-hover:text-on-primary/80 transition-colors"
+								>
+									We're not just following trends; we're setting them. Step into the
+									latest fashion with our trendsetting styles that keep you ahead of the
+									curve in the Conroe scene.
+								</p>
+							</div>
+							<!-- Card 4 -->
+							<div
+								class="bg-primary p-10 group hover:bg-primary-container transition-all duration-500 border border-white/5"
+							>
+								<span
+									class="material-symbols-outlined text-4xl mb-8 text-on-primary/40 group-hover:text-on-primary transition-colors duration-500"
+								>
+									verified
+								</span>
+								<h3 class="text-2xl font-serif mb-4 text-on-primary">
+									Premium Products
+								</h3>
+								<p
+									class="text-sm text-on-primary/60 leading-relaxed group-hover:text-on-primary/80 transition-colors"
+								>
+									We believe in using only the best. Our premium hair care and styling
+									products ensure not only a flawless finish but also the long-term
+									health of your hair.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Offers Section -->
+			<section
+				id="offers"
+				class="py-24 px-12 bg-surface-container border-t border-outline/60 overflow-hidden"
+			>
+				<div class="max-w-screen-2xl mx-auto">
+					<div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-16">
+						<div class="lg:col-span-7 space-y-8">
+							<span
+								class="label-md uppercase letter-spacing-tag text-tertiary block"
+								>Atelier Privilege</span
+							>
+							<h2 class="text-5xl md:text-7xl font-serif text-primary leading-tight">
+								The Colour Day <br /><span class="italic font-normal"
+									>Refinement Event.</span
+								>
+							</h2>
+							<p class="text-xl text-secondary max-w-xl leading-relaxed">
+								For a limited time, experience our signature artistry with a
+								<span class="text-primary font-bold">10% appreciation</span> on all
+								precision cuts, bespoke color, and high-fashion highlights.
+							</p>
+							<div class="pt-6">
+								<a
+									href="#contact"
+									class="matte-blue-cta text-white px-12 py-5 uppercase font-label text-[12px] tracking-[0.2em] shadow-xl shadow-primary/20 inline-block"
+								>
+									Secure Your Visit
+								</a>
+							</div>
+						</div>
+						<div class="lg:col-span-5 relative">
+							<div
+								class="aspect-[4/5] bg-surface-container-high border border-outline/40 p-4 relative z-10"
+							>
+								<img
+									src="images/hair-color.jpg"
+									alt="Blonde transformation"
+									class="w-full h-full object-cover grayscale-[0.2] transition-all duration-700 hover:grayscale-0"
+								/>
+							</div>
+							<div
+								class="absolute -top-8 -right-8 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-0"
+							></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				id="portfolio"
+				class="py-24 bg-surface-container-low px-12 border-t border-outline/60"
+			>
+				<div class="max-w-screen-2xl mx-auto">
+					<div class="text-center mb-20">
+						<span class="label-md uppercase letter-spacing-tag text-tertiary block mb-4">Visual Excellence</span>
+						<h2 class="text-4xl md:text-5xl font-serif text-primary">The Portfolio</h2>
+					</div>
+					<div class="grid grid-cols-12 gap-8 h-[900px]">
+						<div
+							class="col-span-12 md:col-span-8 overflow-hidden bg-surface-container border border-outline/60 p-4"
+						>
+							<img
+								alt="Blonde balayage"
+								class="w-full h-full object-cover grayscale-[0.1]"
+								src="images/portfolio-blonde.jpg"
+							/>
+						</div>
+						<div
+							class="col-span-12 md:col-span-4 overflow-hidden bg-surface-container border border-outline/60 p-4"
+						>
+							<img
+								alt="Textured bob"
+								class="w-full h-full object-cover grayscale-[0.1]"
+								src="images/portfolio-bob.jpg"
+							/>
+						</div>
+						<div
+							class="col-span-12 md:col-span-4 overflow-hidden bg-surface-container border border-outline/60 p-4"
+						>
+							<img
+								alt="Men's styling"
+								class="w-full h-full object-cover grayscale-[0.1]"
+								src="images/profile-1.jpg"
+							/>
+						</div>
+						<div
+							class="col-span-12 md:col-span-8 overflow-hidden bg-surface-container border border-outline/60 p-4"
+						>
+							<img
+								alt="Hair treatment"
+								class="w-full h-full object-cover grayscale-[0.1]"
+								src="images/portfolio-treatment.jpg"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Journal -->
+			<section
+				id="journal"
+				class="py-32 px-12 bg-background overflow-hidden relative border-t border-outline/60"
+			>
+				<span
+					class="absolute top-10 right-[-5%] text-[20rem] font-serif text-outline/10 italic select-none"
+					>"</span
+				>
+				<div class="max-w-5xl mx-auto relative z-10">
+					<div class="text-center mb-20">
+						<span
+							class="label-md uppercase letter-spacing-tag text-tertiary block mb-4"
+							>Client Experiences</span
+						>
+						<h2 class="text-4xl font-serif text-primary">Voices of the Atelier</h2>
+					</div>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+						<!-- Testimonial 1 -->
+						<div class="flex flex-col h-full">
+							<p
+								class="text-2xl font-serif leading-relaxed italic mb-10 text-primary flex-grow"
+							>
+								"Luxe Salon is more than just a hair appointment; it's a sensory reset.
+								The attention to detail and the serene atmosphere in Conroe is
+								unparalleled."
+							</p>
+							<div class="flex items-center gap-4 pt-8 border-t border-outline/60">
+								<div
+									class="w-12 h-12 outline outline-[1px] outline-outline-variant overflow-hidden"
+								>
+									<img
+										alt="Catherine S."
+										class="w-full h-full object-cover grayscale"
+										src="images/testimonial-catherine.jpg"
+									/>
+								</div>
+								<div>
+									<h4
+										class="label-md uppercase letter-spacing-tag text-primary text-xs font-bold"
+									>
+										Catherine S.
+									</h4>
+									<p class="text-[10px] uppercase tracking-widest text-tertiary">
+										Conroe, TX
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 2 -->
+						<div class="flex flex-col h-full">
+							<p
+								class="text-2xl font-serif leading-relaxed italic mb-10 text-primary flex-grow"
+							>
+								"Finally, an editorial-quality salon that understands dimensional color.
+								Elena transformed my look while keeping my hair's health the top
+								priority."
+							</p>
+							<div class="flex items-center gap-4 pt-8 border-t border-outline/60">
+								<div
+									class="w-12 h-12 outline outline-[1px] outline-outline-variant overflow-hidden"
+								>
+									<img
+										alt="Elizabeth M."
+										class="w-full h-full object-cover grayscale"
+										src="images/testimonial-elizabeth.jpg"
+									/>
+								</div>
+								<div>
+									<h4
+										class="label-md uppercase letter-spacing-tag text-primary text-xs font-bold"
+									>
+										Elizabeth M.
+									</h4>
+									<p class="text-[10px] uppercase tracking-widest text-tertiary">
+										The Woodlands
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 3 -->
+						<div class="flex flex-col h-full">
+							<p
+								class="text-2xl font-serif leading-relaxed italic mb-10 text-primary flex-grow"
+							>
+								"The most sophisticated styling experience I've had outside of NYC. A
+								true sanctuary for those who appreciate the craft of hair design."
+							</p>
+							<div class="flex items-center gap-4 pt-8 border-t border-outline/60">
+								<div
+									class="w-12 h-12 outline outline-[1px] outline-outline-variant overflow-hidden"
+								>
+									<img
+										alt="Julianne R."
+										class="w-full h-full object-cover grayscale"
+										src="images/hero-woman.jpg"
+									/>
+								</div>
+								<div>
+									<h4
+										class="label-md uppercase letter-spacing-tag text-primary text-xs font-bold"
+									>
+										Julianne R.
+									</h4>
+									<p class="text-[10px] uppercase tracking-widest text-tertiary">
+										Houston, TX
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				id="contact"
+				class="py-32 px-12 bg-surface-container border-t border-outline/60"
+			>
+				<div class="max-w-screen-2xl mx-auto">
+					<div class="text-center mb-24">
+						<span class="label-md uppercase letter-spacing-tag text-tertiary block mb-4">Get In Touch</span>
+						<h2 class="text-4xl md:text-5xl font-serif text-primary">Connect With Us</h2>
+					</div>
+					<div
+						class="grid grid-cols-1 md:grid-cols-12 gap-24 items-start"
+					>
+						<div class="md:col-span-6 space-y-12">
+							<div>
+								<h4 class="label-md uppercase letter-spacing-tag text-tertiary mb-4">
+									Location
+								</h4>
+								<p class="text-2xl font-serif text-primary">
+									1200 N Frazier St, <br />Conroe, TX 77301
+								</p>
+							</div>
+							<div class="grid grid-cols-2 gap-8">
+								<div>
+									<h4 class="label-md uppercase letter-spacing-tag text-tertiary mb-4">
+										Contact
+									</h4>
+									<p class="text-xl font-serif text-primary">936.555.0124</p>
+									<p class="text-sm font-body mt-2 text-secondary">
+										hello@luxesalonconroe.com
+									</p>
+								</div>
+								<div>
+									<h4 class="label-md uppercase letter-spacing-tag text-tertiary mb-4">
+										Follow
+									</h4>
+									<p class="text-xl font-serif italic text-primary">@luxesalonconroe</p>
+								</div>
+							</div>
+							<div>
+								<h4 class="label-md uppercase letter-spacing-tag text-tertiary mb-4">
+									Hours
+								</h4>
+								<div
+									class="grid grid-cols-2 gap-x-12 gap-y-2 font-body text-sm text-secondary"
+								>
+									<span class="">Tuesday — Thursday</span>
+									<span class="text-right text-primary">10am — 7pm</span>
+									<span class="">Friday</span>
+									<span class="text-right text-primary">9am — 6pm</span>
+									<span class="">Saturday</span>
+									<span class="text-right text-primary">9am — 4pm</span>
+									<span class="">Sunday — Monday</span>
+									<span class="text-right italic text-tertiary">Closed</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="md:col-span-6 bg-surface p-12 md:p-16 flex flex-col justify-center items-center text-center shadow-2xl shadow-primary/5 border border-outline/20"
+						>
+						<span class="label-md uppercase letter-spacing-tag text-tertiary mb-6"
+							>Online Concierge</span
+						>
+						<h2 class="text-4xl font-serif mb-8 text-primary">
+							Begin Your Transformation
+						</h2>
+						<p class="text-secondary mb-10 max-w-sm">
+							Choose your master artisan and specialized service to begin your bespoke salon experience.
+						</p>
+						<form class="w-full space-y-6">
+							<div class="space-y-2 text-left">
+								<label class="text-[10px] uppercase tracking-widest text-tertiary font-bold ml-1">Select Stylist</label>
+								<select class="w-full bg-background border-outline/40 text-primary font-serif py-4 px-4 focus:ring-primary focus:border-primary transition-all cursor-pointer appearance-none">
+									<option value="" disabled selected>CHOOSE AN ARTISAN</option>
+									<option value="julian">JULIAN VANE — MASTER COLORIST</option>
+									<option value="elena">ELENA ROSSI — CREATIVE DIRECTOR</option>
+									<option value="sarah">SARAH MILLER — TEXTURE SPECIALIST</option>
+								</select>
+							</div>
+							<div class="space-y-2 text-left">
+								<label class="text-[10px] uppercase tracking-widest text-tertiary font-bold ml-1">Select Service</label>
+								<select class="w-full bg-background border-outline/40 text-primary font-serif py-4 px-4 focus:ring-primary focus:border-primary transition-all cursor-pointer appearance-none">
+									<option value="" disabled selected>CHOOSE A SERVICE</option>
+									<option value="cuts">PRECISION CUTS</option>
+									<option value="color">CUSTOM COLOR</option>
+									<option value="balayage">BALAYAGE</option>
+									<option value="treatment">LUXURY TREATMENTS</option>
+								</select>
+							</div>
+							<button
+								type="submit"
+								class="matte-blue-cta text-white w-full py-6 mt-4 uppercase tracking-[0.2em] font-serif text-sm shadow-xl shadow-primary/20 hover:scale-[1.02] transition-transform"
+							>
+								Request Appointment
+							</button>
+						</form>
+						<p class="mt-8 text-xs text-tertiary">
+							Our concierge will contact you within 24 hours to finalize your visit.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer
+			class="w-full py-20 px-12 bg-surface-container-low border-t border-outline/80"
+		>
+			<div
+				class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start max-w-screen-2xl mx-auto"
+			>
+				<div>
+					<a class="text-lg font-serif italic text-primary" href="#"
+						>LUXE SALON CONROE</a
+					>
+					<p class="mt-6 text-sm uppercase letter-spacing-tag text-secondary">
+						© 2024 LUXE SALON CONROE. ALL RIGHTS RESERVED.
+						<br>
+						<a href="https://my-profile-32.netlify.app" class="text-secondary hover:text-primary uppercase text-xs tracking-widest transition-colors">Created by Igor Ratajczyk</a>
+					</p>
+				</div>
+				<div class="flex flex-col gap-4">
+					<h4 class="label-md uppercase letter-spacing-tag mb-2 text-primary">
+						Explore
+					</h4>
+					<a
+						class="text-secondary hover:text-primary uppercase text-xs tracking-widest transition-colors"
+						href="#"
+						>INSTAGRAM</a
+					>
+					<a
+						class="text-secondary hover:text-primary uppercase text-xs tracking-widest transition-colors"
+						href="#"
+						>PINTEREST</a
+					>
+					<a
+						class="text-secondary hover:text-primary uppercase text-xs tracking-widest transition-colors"
+						href="#"
+						>DIRECTIONS</a
+					>
+					<a
+						class="text-secondary hover:text-primary uppercase text-xs tracking-widest transition-colors"
+						href="#"
+						>CONTACT</a
+					>
+				</div>
+				<div class="md:text-right">
+					<h4 class="label-md uppercase letter-spacing-tag mb-6 text-primary">
+						Join The Journal
+					</h4>
+					<div
+						class="flex border-b border-outline pb-2 focus-within:border-primary transition-all"
+					>
+						<input
+							class="bg-transparent border-none focus:ring-0 w-full placeholder:uppercase placeholder:text-xs placeholder:tracking-widest text-sm text-primary"
+							placeholder="Email Address"
+							type="email"
+						/>
+						<button class="material-symbols-outlined text-lg text-primary">
+							arrow_forward
+						</button>
+					</div>
+					<p class="mt-4 text-[10px] uppercase text-tertiary tracking-tighter">
+						Quiet luxury delivered to your inbox.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
