@@ -30,7 +30,9 @@
 
 .nav-link {
 	position: relative;
-	transition: color 0.3s ease, opacity 0.3s ease;
+	transition:
+		color 0.3s ease,
+		opacity 0.3s ease;
 }
 
 .nav-link::after {
@@ -79,7 +81,8 @@
 	width: 24px;
 	height: 1.5px;
 	background-color: #0a192f;
-	transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+	transition:
+		transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
 		opacity 0.25s ease;
 	transform-origin: center;
 }
@@ -165,7 +168,9 @@ body.menu-open {
 	text-decoration: none;
 	padding: 16px 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-	transition: color 0.25s ease, letter-spacing 0.3s ease;
+	transition:
+		color 0.25s ease,
+		letter-spacing 0.3s ease;
 	letter-spacing: -0.02em;
 	line-height: 1;
 	position: relative;
@@ -220,7 +225,9 @@ body.menu-open {
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
-	transition: background 0.3s ease, border-color 0.3s ease;
+	transition:
+		background 0.3s ease,
+		border-color 0.3s ease;
 }
 .mobile-book-btn:hover {
 	border-color: rgba(248, 250, 252, 0.5);
@@ -307,5 +314,33 @@ body.menu-open {
 	/* Why choose cards - reduce padding */
 	.lg\:col-span-7 .bg-primary.p-10 {
 		padding: 1.5rem;
+	}
+}
+.zoomIn {
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes zoomIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	50% {
+		opacity: 1;
+	}
+}
+@keyframes zoomIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	50% {
+		opacity: 1;
 	}
 }

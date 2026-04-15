@@ -7,6 +7,8 @@
 			href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap"
 			rel="stylesheet"
 		/>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="logo.png" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
 			rel="stylesheet"
@@ -20,7 +22,7 @@
 		<div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true" role="dialog" aria-label="Navigation menu">
 			<div class="mobile-menu-inner">
 				<div class="mobile-menu-header">
-					<a class="text-2xl font-serif tracking-tight text-on-primary" href="#" onclick="closeMobileMenu()">LUXE SALON</a>
+					<a class="text-2xl font-serif tracking-tight text-on-primary" href="#" onclick="closeMobileMenu()">Luxe Salon</a>
 					<button id="mobile-close-btn" class="mobile-close-btn" onclick="closeMobileMenu()" aria-label="Close menu">
 						<span class="material-symbols-outlined" style="font-size:28px;">close</span>
 					</button>
@@ -29,7 +31,7 @@
 					<a class="mobile-nav-link" href="#services" onclick="closeMobileMenu()"><span class="mobile-nav-num">01</span>Services</a>
 					<a class="mobile-nav-link" href="#stylists" onclick="closeMobileMenu()"><span class="mobile-nav-num">02</span>Stylists</a>
 					<a class="mobile-nav-link" href="#portfolio" onclick="closeMobileMenu()"><span class="mobile-nav-num">03</span>Portfolio</a>
-					<a class="mobile-nav-link" href="#journal" onclick="closeMobileMenu()"><span class="mobile-nav-num">04</span>Journal</a>
+					<a class="mobile-nav-link" href="#nials" onclick="closeMobileMenu()"><span class="mobile-nav-num">04</span>Testimonials</a>
 				</nav>
 				<div class="mobile-menu-footer">
 					<a href="#contact" class="mobile-book-btn" onclick="closeMobileMenu()">Book Appointment</a>
@@ -47,8 +49,8 @@
 			<div
 				class="flex justify-between items-center px-6 md:px-12 py-5 md:py-6 w-full max-w-screen-2xl mx-auto"
 			>
-				<a class="text-xl md:text-2xl font-serif tracking-tight text-primary" href="#"
-					>LUXE SALON</a
+				<a class="text-xl md:text-2xl font-serif tracking-tight text-primary italic" href="#"
+					>Luxe Salon</a
 				>
 				<div class="hidden md:flex items-center space-gap-12 gap-10">
 					<a
@@ -68,8 +70,8 @@
 					>
 					<a
 						class="nav-link text-secondary hover:text-primary transition-colors duration-300 font-label text-[12px] uppercase letter-spacing-tag"
-						href="#journal"
-						>JOURNAL</a
+						href="#testimonials"
+						>TESTIMONIALS</a
 					>
 				</div>
 				<div class="flex items-center gap-4">
@@ -113,8 +115,12 @@
 					>
 					<h1 class="font-serif text-primary leading-[1.1] letter-spacing-hero mb-6 md:mb-8">
 						<span
-							class="block text-3xl md:text-6xl lg:text-7xl mb-3 md:mb-4 hero-subtitle"
-							>Refined Artistry & Next Level</span
+							class="text-3xl md:text-6xl lg:text-7xl mb-3 md:mb-4 hero-subtitle"
+							>Refined Artistry & Next </span
+						>
+						<span
+							class="zoomIn text-gold text-3xl md:text-6xl lg:text-7xl mb-3 md:mb-4 hero-subtitle"
+							>Level</span
 						>
 						<span class="block text-5xl md:text-8xl lg:text-9xl italic"
 							>Bespoke Beauty.</span
@@ -176,7 +182,7 @@
 					</div>
 					<div class="space-y-12">
 						<div
-							class="flex justify-between items-baseline group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
+							class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-4 group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
 						>
 							<div class="max-w-md">
 								<h3
@@ -189,10 +195,10 @@
 									facial structure.
 								</p>
 							</div>
-							<span class="font-body text-xl text-primary/80">From $110.00</span>
+							<span class="font-body text-primary/80 bg-surface-container-high p-2 self-end md:self-auto shrink-0">From $110.00</span>
 						</div>
 						<div
-							class="flex justify-between items-baseline group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
+							class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-4 group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
 						>
 							<div class="max-w-md">
 								<h3
@@ -205,10 +211,10 @@
 									pigments.
 								</p>
 							</div>
-							<span class="font-body text-xl text-primary/80">From $185.00</span>
+							<span class="font-body text-primary/80 bg-surface-container-high p-2 self-end md:self-auto shrink-0">From $185.00</span>
 						</div>
 						<div
-							class="flex justify-between items-baseline group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
+							class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-4 group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
 						>
 							<div class="max-w-md">
 								<h3
@@ -221,10 +227,10 @@
 									the Conroe sky.
 								</p>
 							</div>
-							<span class="font-body text-xl text-primary/80">From $250.00</span>
+							<span class="font-body text-primary/80 bg-surface-container-high p-2 self-end md:self-auto shrink-0">From $250.00</span>
 						</div>
 						<div
-							class="flex justify-between items-baseline group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
+							class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-4 group cursor-pointer border-b border-outline-variant/30 pb-8 hover:border-primary transition-colors duration-500"
 						>
 							<div class="max-w-md">
 								<h3
@@ -237,11 +243,12 @@
 									unparalleled shine.
 								</p>
 							</div>
-							<span class="font-body text-xl text-primary/80">From $195.00</span>
+							<span class="font-body text-primary/80 bg-surface-container-high p-2 self-end md:self-auto shrink-0">From $195.00</span>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- About Section -->
 			<section class="py-16 md:py-32 px-6 md:px-12 bg-background border-t border-outline/60">
 				<div
 					class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center"
@@ -281,6 +288,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Stylists Section -->
 			<section
 				id="stylists"
 				class="py-16 md:py-24 px-6 md:px-12 bg-surface border-t border-outline/60"
@@ -381,6 +389,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Why Choose Section -->
 			<section
 				class="py-16 md:py-24 px-6 md:px-12 bg-primary text-on-primary border-t border-outline/60"
 			>
@@ -406,7 +415,7 @@
 							</p>
 							<div class="flex items-center gap-16">
 								<div class="flex flex-col">
-									<span class="text-6xl font-serif mb-2 text-on-primary">30k+</span>
+									<span class="text-6xl font-serif mb-2 text-on-primary">12k+</span>
 									<span
 										class="text-[10px] uppercase tracking-[0.1em] text-on-primary/50 font-body"
 										>Curated Styles</span
@@ -559,6 +568,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Portfolio Section -->
 			<section
 				id="portfolio"
 				class="py-16 md:py-24 bg-surface-container-low px-6 md:px-12 border-t border-outline/60"
@@ -601,9 +611,9 @@
 					</div>
 				</div>
 			</section>
-			<!-- Journal -->
+			<!-- Testimonials -->
 			<section
-				id="journal"
+				id="testimonials"
 				class="py-16 md:py-32 px-6 md:px-12 bg-background overflow-hidden relative border-t border-outline/60"
 			>
 				<span
@@ -714,6 +724,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Contact Section -->
 			<section
 				id="contact"
 				class="py-16 md:py-32 px-6 md:px-12 bg-surface-container border-t border-outline/60"

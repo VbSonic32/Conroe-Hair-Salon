@@ -20,6 +20,7 @@
 				'surface-container-highest': '#94A3B8',
 				'primary-container': '#1B2C44',
 				'on-primary-container': '#E2E8F0',
+				gold: '#9f6834ff',
 			},
 			borderRadius: {
 				DEFAULT: '0px',
@@ -112,4 +113,3 @@
 			});
 		});
 	}));
-
