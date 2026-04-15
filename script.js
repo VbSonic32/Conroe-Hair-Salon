@@ -35,10 +35,36 @@
 		},
 	},
 }),
+	// ===================== MOBILE MENU =====================
+	(window.openMobileMenu = function () {
+		const menu = document.getElementById('mobile-menu');
+		const btn = document.getElementById('mobile-menu-btn');
+		if (!menu || !btn) return;
+		menu.classList.add('is-open');
+		menu.setAttribute('aria-hidden', 'false');
+		btn.classList.add('open');
+		btn.setAttribute('aria-expanded', 'true');
+		document.body.classList.add('menu-open');
+	}),
+	(window.closeMobileMenu = function () {
+		const menu = document.getElementById('mobile-menu');
+		const btn = document.getElementById('mobile-menu-btn');
+		if (!menu || !btn) return;
+		menu.classList.remove('is-open');
+		menu.setAttribute('aria-hidden', 'true');
+		btn.classList.remove('open');
+		btn.setAttribute('aria-expanded', 'false');
+		document.body.classList.remove('menu-open');
+	}),
 	// ScrollSpy and Smooth Scrolling
 	document.addEventListener('DOMContentLoaded', () => {
 		const sections = document.querySelectorAll('section[id]');
 		const navLinks = document.querySelectorAll('nav a.nav-link[href^="#"]');
+
+		// Close mobile menu on ESC key
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') window.closeMobileMenu();
+		});
 
 		const setActive = (id) => {
 			navLinks.forEach((link) => {
@@ -86,3 +112,4 @@
 			});
 		});
 	}));
+
